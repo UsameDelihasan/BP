@@ -1,17 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.Api", "BP.Api\BP.Api.csproj", "{D0DFB39A-8744-49CC-B2A9-3B93E05422E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BP.Api", "BP.Api\BP.Api.csproj", "{D0DFB39A-8744-49CC-B2A9-3B93E05422E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.Api.Models", "BP.Api.Models\BP.Api.Models.csproj", "{DF1D7B81-F9D5-49F3-99CD-FA80B11CA788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BP.Api.Models", "BP.Api.Models\BP.Api.Models.csproj", "{DF1D7B81-F9D5-49F3-99CD-FA80B11CA788}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.Api.Data.Models", "BP.Api.Data.Models\BP.Api.Data.Models.csproj", "{653DBE17-7C3C-4C10-9CB8-72C17BD48E4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BP.Api.Data.Models", "BP.Api.Data.Models\BP.Api.Data.Models.csproj", "{653DBE17-7C3C-4C10-9CB8-72C17BD48E4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.Api.Services", "BP.Api.Services\BP.Api.Services.csproj", "{C28ECF5C-0FA9-43FE-89C3-96338B182770}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.Api.Data.Services", "BP.Api.Data.Services\BP.Api.Data.Services.csproj", "{E1AA78CA-48BA-479B-9AD6-62D64325D105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BP.Api.Services", "BP.Api.Services\BP.Api.Services.csproj", "{C28ECF5C-0FA9-43FE-89C3-96338B182770}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{C28ECF5C-0FA9-43FE-89C3-96338B182770}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C28ECF5C-0FA9-43FE-89C3-96338B182770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C28ECF5C-0FA9-43FE-89C3-96338B182770}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E1AA78CA-48BA-479B-9AD6-62D64325D105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1AA78CA-48BA-479B-9AD6-62D64325D105}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1AA78CA-48BA-479B-9AD6-62D64325D105}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1AA78CA-48BA-479B-9AD6-62D64325D105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

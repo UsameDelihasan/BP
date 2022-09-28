@@ -13,8 +13,13 @@ namespace BP.Api
     {
         private static IConfiguration Configuration
         {
+
+            
             get
             {
+
+                string env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production";
+
                 return new ConfigurationBuilder()
                     .SetBasePath(System.IO.Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", optional: false)

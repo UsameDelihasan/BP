@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\BP.Api.Models\BP.Api.Models.csproj" />
+    <ProjectReference Include="..\BP.Api.Services\BP.Api.Services.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+	</ItemGroup>
 
 </Project>
