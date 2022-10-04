@@ -1,5 +1,9 @@
 using BP.Api.Extensions;
+using BP.Api.Models;
 using BP.Api.Services;
+using BP.Api.Validations;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
@@ -29,10 +33,11 @@ namespace BP.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation();
             services.AddHealthChecks();
             services.AddScoped<IContactService, ContactService>();
             services.ConfigureMapping();
+            services.AddTransient<IValidator<ContactDVO>, ContactValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +47,8 @@ namespace BP.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseResponseCaching();
 
             app.UseCustomHealthCheck();
 

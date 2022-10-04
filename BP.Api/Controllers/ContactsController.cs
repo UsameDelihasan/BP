@@ -21,17 +21,26 @@ namespace BP.Api.Controllers
 
 
         [HttpGet]
-
+        
         public string get()
         {
             return _configuration["ReadMe"].ToString();
         }
 
-        [HttpGet("{Id}")]
 
+        [HttpGet("{Id}")]
+        [ResponseCache(Duration = 10)]
         public ContactDVO GetContactDVOById(int id)
         {
             return _contactService.GetContactDVOById(id);
         }
+
+        [HttpPost]
+
+        public ContactDVO CreateContactDVO(ContactDVO contactDVO)
+        {
+            return contactDVO;
+        }
+       
     }
 }
